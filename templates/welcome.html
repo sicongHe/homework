@@ -1,0 +1,63 @@
+<!Doctype html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>欢迎登录</title>
+<link href="http://139.129.50.63:5000/static/css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="bg" >
+        <div class="head">
+            <img src="../static/image/logo.gif"/>
+            <div class="head_right">
+                <div class="headmenu">
+                    <a href="" class="menu">设为首页</a>
+                    <font color="#333">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+                    <a href="" class="menu">加入收藏</a>
+                    <font color="#333">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+                    <a href="http://139.129.50.63:5000/login" class="menu">登陆</a>
+                    <font color="#333">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+                    <a href="" class="menu">中文</a>
+                    <font color="#333">&nbsp;&nbsp;|&nbsp;&nbsp;</font>
+                    <a href="" class="menu">English</a>
+                    <font color="#333">&nbsp;&nbsp;&nbsp;&nbsp;</font>
+                </div>
+                <div class="search">
+                    <img src="../static/image/wenhao.png" style="margin-top:3px;float:left;"/>
+                    <form>
+                        <input id="search" type="text"  style="float:left;border:0;margin-top:3px;width:200px;color:gray;" value="请输入搜索内容" onfocus="search_1();" onblur="search_2();">
+                        <input type="button" class="button" value="搜索" >
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_1" onclick="window.location.href='http://139.129.50.63:5000/index' " onmouseover="this.style.background='#807E80';" onmouseout="this.style.background='#5A5F69';" >首页</div>
+            <div class="nav_1" onclick="window.location.href='' " onmouseover="this.style.background='#807E80';f1();f3(this);f4(this);" onmouseout="this.style.background='#5A5F69';setTimeout('f2()',5);">学院概况</div>
+            <div class="nav_1" onclick="window.location.href='' " onmouseover="this.style.background='#807E80';f1();f3(this);f4(this);" onmouseout="this.style.background='#5A5F69';setTimeout('f2()',5);">党建工作</div>
+            <div class="nav_1" onclick="window.location.href='' " onmouseover="this.style.background='#807E80';f1();f3(this);f4(this);" onmouseout="this.style.background='#5A5F69';setTimeout('f2()',5);">本科教学</div>
+            <div class="nav_1" onclick="window.location.href='' " onmouseover="this.style.background='#807E80';f1();f3(this);f4(this);" onmouseout="this.style.background='#5A5F69';setTimeout('f2()',5);">研究生教学</div>
+            <div class="nav_1" onclick="window.location.href='' " onmouseover="this.style.background='#807E80';f1();f3(this);f4(this);" onmouseout="this.style.background='#5A5F69';setTimeout('f2()',5);">师资队伍</div>
+            <div class="nav_1" onclick="window.location.href='' " onmouseover="this.style.background='#807E80';f1();f3(this);f4(this);" onmouseout="this.style.background='#5A5F69';setTimeout('f2()',5);">科研外事</div>
+            <div class="nav_1" onclick="window.location.href='' " onmouseover="this.style.background='#807E80';f1();f3(this);f4(this);" onmouseout="this.style.background='#5A5F69';setTimeout('f2()',5);">学生工作</div>
+            <div class="nav_1" onclick="window.location.href='' " onmouseover="this.style.background='#807E80';" onmouseout="this.style.background='#5A5F69';">考试中心</div>
+            <div class="nav_1" onclick="window.location.href='' " onmouseover="this.style.background='#807E80';" onmouseout="this.style.background='#5A5F69';">校友之家</div>
+            <div class="nav_1" onclick="window.location.href='' " onmouseover="this.style.background='#807E80';" onmouseout="this.style.background='#5A5F69';">工会工作</div>
+
+        </div>
+        <div class="nav_2" id="nav_2" onmouseover="ff();" onmousemove=" "; onmouseleave="fff=false;f2();targeT.style.background='#5A5F69';document.getElementById('nav_2').innerHTML ='';">
+        </div>
+        <div style="width:100%;height:500px;">
+		<h1 style="margin:0 auto;padding:0 auto;text-align:center;">{% if name %}欢迎登录，{{name}}{% else %}请您联系管理员注册，注册页面开发中……{% endif %}</h1>
+	</div>
+        
+        
+        <img src="../static/image/cp.png" style="margin:0 auto;margin-top:20px;" />
+
+
+    </div>
+    <script type="text/javascript" src="http://139.129.50.63:5000/static/js/index.js"></script>
+    <script type="text/javascript" src="http://139.129.50.63:5000/static/js/lib/jquery-2.0.3.js"></script>
+</body>
+</html>
